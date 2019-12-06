@@ -1,27 +1,21 @@
 package sample;
 
 import javafx.application.Application;
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Group;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.ChoiceBox;
-import javafx.scene.text.Text;
 import javafx.stage.Stage;
+import sample.Controller;
 
-import java.util.ArrayList;
-import java.util.List;
 
 public class Main extends Application {
 
     @Override
     public void start(Stage stage) throws Exception{
-
-
-
-        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("sample.fxml"));
+        Parent root = (Parent) loader.load();
+        Controller myController = loader.getController();
+        myController.initData();
         stage.setTitle("JavaFXTestApp");
         stage.setWidth(600);
         stage.setHeight(600);
