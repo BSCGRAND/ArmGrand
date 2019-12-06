@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #bababa;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #bababa;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+         <children>
+            <Pane layoutX="14.0" layoutY="14.0" prefHeight="137.0" prefWidth="159.0">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="-21.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@logo.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutX="153.0" layoutY="69.0" prefHeight="103.0" prefWidth="294.0">
+               <children>
+                  <Text fill="#871516" layoutX="60.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login form">
+                     <font>
+                        <Font name="Tahoma Bold" size="32.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Pane layoutX="136.0" layoutY="163.0" prefHeight="294.0" prefWidth="328.0">
+               <children>
+                  <PasswordField layoutX="155.0" layoutY="221.0" />
+                  <Label layoutX="49.0" layoutY="52.0" text="Объект" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="26.0" layoutY="107.0" text="Подразделение" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="52.0" layoutY="165.0" text="Ф.И.О." textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="48.0" layoutY="225.0" text="Пароль" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <ChoiceBox fx:id="chBox1" layoutX="154.0" layoutY="50.0" prefWidth="150.0">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </ChoiceBox>
+                  <ChoiceBox fx:id="objectsDD1" layoutX="154.0" layoutY="105.0" prefWidth="150.0">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </ChoiceBox>
+                  <ChoiceBox fx:id="objectsDD2" layoutX="154.0" layoutY="163.0" prefWidth="150.0">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </ChoiceBox>
+               </children>
+            </Pane>
+            <Pane layoutX="200.0" layoutY="469.0" prefHeight="83.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="loginBtn" layoutX="38.0" layoutY="29.0" mnemonicParsing="false" onAction="#loginButtonHandler" prefHeight="25.0" prefWidth="124.0" text="Login">
+                     <font>
+                        <Font name="Tahoma" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</Pane>
